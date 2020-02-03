@@ -2,11 +2,10 @@
 using namespace std;
 
 int main(){
-    vector<int> a = {1, 2, 2, 3, 4, 4};
+    vector<int> a = {1, 2, 2, 3, 4, 45};
 
-    for (vector<int>::iterator i = a.begin(); i < unique(a.begin(), a.begin() + a.size()); i++){
-        cout<<*i;
-    }
+    auto i = a.end();
+    printf("%d", *prev(i, 2));
     getchar();
     return 0;
     
